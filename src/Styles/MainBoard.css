@@ -1,0 +1,227 @@
+.main {
+  margin-top: 5%;
+  background: var(--mainboard-color);
+  border-radius: 2%;
+  width: 90%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: 1px 3px 8px 1px var(--shadow);
+}
+
+/* grid item 1 */
+.itemMain1 {
+  font-size: 4rem;
+  margin: auto;
+  max-width: max-content;
+  text-align: center;
+}
+
+.text-change {
+  color: var(--alternative);
+}
+
+.text-small {
+  font-size: small;
+}
+
+.text-button {
+  border-bottom: 1px var(--secundary) solid;
+  border-bottom-left-radius: 22%;
+  border-bottom-right-radius: 22%;
+  border-style: outset;
+  margin-left: 2px;
+}
+
+.circle {
+  transform: rotate3d(12, 10, -12, 90deg);
+  border: 2px var(--alternative) solid;
+  opacity: 0.8;
+  position: absolute;
+  border-radius: 100%;
+  border-left: 0;
+  border-right: 0;
+}
+
+.account2 {
+  background: var(--light-primary);
+  margin-right: 20px;
+  box-shadow: 2px 4px 8px 1px var(--shadow);
+  border: 0px;
+}
+
+.text-account2 {
+  margin-inline: 10px;
+  color: var(--text-color);
+}
+
+/* grid item 2 */
+.itemMain2 {
+  background-color: var(--secundary);
+  background-image: var(--character);
+  background-repeat: no-repeat;
+  background-position-x: center !important;
+  background-position-y: bottom;
+  background-size: 50%;
+}
+
+.text-time {
+  background: white;
+  margin: 20px;
+  border-radius: 55px;
+  padding: 20px;
+  color: var(--secundary);
+}
+
+.add-icon {
+  color: black;
+  background: white;
+  opacity: 0.5;
+  top: 36%;
+  left: 40%;
+  padding: 1.2%;
+  margin: 0;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.btn-join {
+  color: var(--dark-secundary);
+}
+
+.fortnite {
+  margin-top: 30%;
+  color: white;
+}
+
+/* grid item 3 */
+
+.itemMain3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+
+.tag-number {
+  color: var(--font-color);
+  font-size: x-large;
+  opacity: 0.6;
+}
+
+.span-3 {
+  font-size: medium;
+}
+
+.section-platform {
+  background: var(--primary);
+  padding: 5px;
+  border-radius: 45px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+.section-game {
+  background: var(--primary);
+  padding: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.space-text {
+  margin-bottom: 40px;
+}
+
+.btn-platform {
+  background: transparent;
+  color: var(--font-color);
+  opacity: 0.6;
+  padding: 20px;
+  margin: 0;
+  border-radius: 30px;
+  height: 100%;
+  width: 120px;
+}
+
+.btn-platform:hover {
+  opacity: 1;
+  background: var(--mainboard-color);
+  box-shadow: 2px 1px 7px 1px var(--shadow);
+}
+
+.search-input {
+  background: transparent;
+  color: var(--font-color);
+  font-size: large;
+  border: 0;
+  float: left;
+}
+
+.order-button {
+  float: right;
+  color: var(--font-color);
+  opacity: 0.3;
+  font-size: large;
+}
+
+.order-user {
+  background: var(--dark-primary-alternative);
+  padding: 5px;
+  border-radius: 100%;
+  color: var(--font-color);
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+.name-user {
+  margin-right: 3px;
+}
+
+.avatar-user {
+  padding: 7px;
+  background-color: var(--alternative);
+  border-radius: 14px;
+  margin-left: 20%;
+}
+.B {
+  margin-left: -7px !important;
+  background-color: var(--secundary);
+}
+
+.userJoin-btn {
+  padding: 5px;
+  background: var(--light-primary);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.part1 {
+  grid-column-start: 1;
+}
+
+.part2 {
+  grid-column-start: 4;
+  grid-column-end: 8;
+}
+
+.part3 {
+  grid-column-start: 12;
+}
+
+.search-button {
+  background: var(--font-color);
+  padding: 25px;
+  border-radius: 10px;
+  color: var(--font-color-alternative);
+  font-size: larger;
+}
+.search-container {
+  overflow-y: scroll;
+  height: 160px;
+}
+.divider-section-search {
+  border: 1px solid var(--light-primary);
+  opacity: 0.5;
+  margin-bottom: 5%;
+}

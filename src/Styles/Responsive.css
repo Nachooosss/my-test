@@ -1,0 +1,1972 @@
+/*  360×640 (móvil pequeño): 22,64%.
+    375×667 (móvil medio): 5%.
+    720×1280 (móvil grande): 2,74%.
+    1366×768 (ordenador portátil medio): 11,98%.
+    1440×900 (escritorio medio): 3,17%.
+    1600×900 (escritorio medio): 3,17%.
+    1920×1080 (escritorio grande): 7,35%. */
+
+/* responsive */
+@media (max-width: 360px) {
+  /* app */
+  button {
+    margin: 0px;
+    font-size: 0.5rem;
+  }
+
+  .title-span {
+    font-size: 0.9rem;
+  }
+
+  .account {
+    padding: 3%;
+  }
+
+  #switch {
+    width: 15px;
+    height: 5px;
+    top: 10px;
+  }
+
+  .slider:before {
+    height: 5px;
+    width: 5px;
+    left: 1px;
+    top: 0;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  /* navbar */
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    justify-self: center;
+  }
+  .item3 {
+    grid-column-start: 7;
+  }
+  .navbarItems {
+    margin: 0px;
+    column-gap: 0px;
+  }
+  .btn-home {
+    padding: 2%;
+  }
+  /* mainboard */
+  .main {
+    grid-template-columns: 1fr;
+    margin-top: 6%;
+    width: 70%;
+  }
+
+  /* grid item 1 */
+  .itemMain1 {
+    font-size: 1.8rem;
+    margin-top: 4%;
+  }
+
+  .text-small {
+    font-size: 0.8rem;
+  }
+
+  .text-button {
+    font-size: 0.8rem;
+    margin-left: 1px;
+    margin-bottom: 10px;
+  }
+
+  .circle {
+    transform: rotate3d(-12, 10, 12, 90deg);
+    left: 42%;
+    width: 18%;
+    height: 20%;
+  }
+
+  .account2 {
+    margin-right: 10px;
+    padding: 7px;
+    font-size: 0.6rem;
+    margin-bottom: 10%;
+  }
+
+  .text-account2 {
+    margin-inline: 0px;
+  }
+
+  /* grid item 2 */
+  .itemMain2 {
+    background-size: 45%;
+    height: 250px;
+  }
+
+  .text-time {
+    margin-top: 3px;
+    padding: 2px;
+  }
+
+  .add-icon {
+    top: 58%;
+    left: 33%;
+    font-size: 0.5rem;
+  }
+
+  /* grid item 3 */
+
+  .itemMain3 {
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 250px;
+  }
+
+  .tag-number {
+    font-size: 0.5rem;
+  }
+
+  .span-3 {
+    font-size: 0.6rem;
+  }
+
+  .section-platform {
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 195px;
+  }
+  .section-game {
+    padding: 2px;
+  }
+
+  .space-text {
+    margin-bottom: 20px;
+  }
+
+  .btn-platform {
+    padding: 6px;
+    width: 65px;
+    margin-top: -100px;
+  }
+
+  .search-input {
+    font-size: 0.6rem;
+    width: 80%;
+  }
+
+  .order-button {
+    font-size: 0.5rem;
+  }
+
+  .order-user {
+    padding: 2px;
+    margin-right: 5px;
+    font-size: 0.6rem;
+  }
+
+  .name-user {
+    font-size: 0.6rem;
+    margin-right: 5px;
+  }
+
+  .avatar-user {
+    padding: 1px;
+    font-size: 0.6rem;
+    margin-left: 1%;
+  }
+  .B {
+    margin-left: -2px !important;
+  }
+
+  .userJoin-btn {
+    padding: 2px;
+    margin-bottom: 1px;
+  }
+
+  .search-button {
+    padding: 10px;
+    font-size: 0.6rem;
+    margin-top: 10px;
+  }
+  .search-container {
+    height: 80px;
+  }
+  .divider-section-search {
+    margin-bottom: 5%;
+  }
+
+  /* categories */
+
+  .box-category {
+    height: 65px;
+    width: 145px;
+    padding: 4px;
+  }
+
+  .title-cat {
+    margin-top: 60px;
+  }
+
+  .box-text {
+    font-size: 0.5rem;
+  }
+
+  .box-index {
+    font-size: 0.5rem;
+  }
+  .custom-color {
+    font-size: 0.5rem;
+  }
+  .box-gabs {
+    margin-top: 1%;
+  }
+  .btn-arrow {
+    margin-top: 2px !important;
+  }
+
+  .grid-category {
+    grid-gap: 0.5em;
+    margin-top: 5px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .circle1 {
+    top: 3% !important;
+  }
+  .circle2 {
+    top: 9% !important;
+  }
+  .circle3 {
+    top: 15% !important;
+  }
+  /* login */
+  .container-login {
+    width: 150px;
+    padding: 5px;
+  }
+
+  .data-login {
+    width: 80px;
+    padding-block: 5px;
+    margin-inline: 20%;
+    margin-bottom: 10px;
+  }
+
+  .btn-login {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .title-login {
+    margin-inline: 35%;
+  }
+
+  .text-input-login {
+    margin-inline: 20%;
+  }
+}
+@media (min-width: 360px) {
+  /* app */
+  button {
+    margin: 0px;
+    font-size: 0.5rem;
+  }
+
+  .title-span {
+    font-size: 0.9rem;
+  }
+
+  .account {
+    padding: 3%;
+  }
+
+  #switch {
+    width: 15px;
+    height: 5px;
+    top: 10px;
+  }
+
+  .slider:before {
+    height: 5px;
+    width: 5px;
+    left: 1px;
+    top: 0;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  /* navbar */
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    justify-self: center;
+  }
+  .item3 {
+    grid-column-start: 7;
+  }
+  .navbarItems {
+    margin: 0px;
+    column-gap: 0px;
+  }
+  .btn-home {
+    padding: 2%;
+  }
+  /* mainboard */
+  .main {
+    grid-template-columns: 1fr;
+    margin-top: 6%;
+    width: 70%;
+  }
+
+  /* grid item 1 */
+  .itemMain1 {
+    font-size: 1.8rem;
+    margin-top: 4%;
+  }
+
+  .text-small {
+    font-size: 0.8rem;
+  }
+
+  .text-button {
+    font-size: 0.8rem;
+    margin-left: 1px;
+    margin-bottom: 10px;
+  }
+
+  .circle {
+    transform: rotate3d(-12, 10, 12, 90deg);
+    left: 42%;
+    width: 18%;
+    height: 20%;
+  }
+
+  .account2 {
+    margin-right: 10px;
+    padding: 7px;
+    font-size: 0.6rem;
+    margin-bottom: 10%;
+  }
+
+  .text-account2 {
+    margin-inline: 0px;
+  }
+
+  /* grid item 2 */
+  .itemMain2 {
+    background-size: 45%;
+    height: 250px;
+  }
+
+  .text-time {
+    margin-top: 3px;
+    padding: 2px;
+  }
+
+  .add-icon {
+    top: 58%;
+    left: 33%;
+    font-size: 0.5rem;
+  }
+
+  /* grid item 3 */
+
+  .itemMain3 {
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 250px;
+  }
+
+  .tag-number {
+    font-size: 0.5rem;
+  }
+
+  .span-3 {
+    font-size: 0.6rem;
+  }
+
+  .section-platform {
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 195px;
+  }
+  .section-game {
+    padding: 2px;
+  }
+
+  .space-text {
+    margin-bottom: 20px;
+  }
+
+  .btn-platform {
+    padding: 6px;
+    width: 65px;
+    margin-top: -100px;
+  }
+
+  .search-input {
+    font-size: 0.6rem;
+    width: 80%;
+  }
+
+  .order-button {
+    font-size: 0.5rem;
+  }
+
+  .order-user {
+    padding: 2px;
+    margin-right: 5px;
+    font-size: 0.6rem;
+  }
+
+  .name-user {
+    font-size: 0.6rem;
+    margin-right: 5px;
+  }
+
+  .avatar-user {
+    padding: 1px;
+    font-size: 0.6rem;
+    margin-left: 1%;
+  }
+  .B {
+    margin-left: -2px !important;
+  }
+
+  .userJoin-btn {
+    padding: 2px;
+    margin-bottom: 1px;
+  }
+
+  .search-button {
+    padding: 10px;
+    font-size: 0.6rem;
+    margin-top: 10px;
+  }
+  .search-container {
+    height: 80px;
+  }
+  .divider-section-search {
+    margin-bottom: 5%;
+  }
+
+  /* categories */
+
+  .box-category {
+    height: 65px;
+    width: 145px;
+    padding: 4px;
+  }
+
+  .title-cat {
+    margin-top: 60px;
+  }
+
+  .box-text {
+    font-size: 0.5rem;
+  }
+
+  .box-index {
+    font-size: 0.5rem;
+  }
+  .custom-color {
+    font-size: 0.5rem;
+  }
+  .box-gabs {
+    margin-top: 1%;
+  }
+  .btn-arrow {
+    margin-top: 2px !important;
+  }
+
+  .grid-category {
+    grid-gap: 0.5em;
+    margin-top: 5px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .circle1 {
+    top: 3% !important;
+  }
+  .circle2 {
+    top: 9% !important;
+  }
+  .circle3 {
+    top: 15% !important;
+  }
+
+  /* login */
+  .container-login {
+    width: 150px;
+    padding: 5px;
+  }
+
+  .data-login {
+    width: 80px;
+    padding-block: 5px;
+    margin-inline: 20%;
+    margin-bottom: 10px;
+  }
+
+  .btn-login {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .title-login {
+    margin-inline: 35%;
+  }
+
+  .text-input-login {
+    margin-inline: 20%;
+  }
+}
+
+@media (min-width: 375px) {
+  /* app */
+  button {
+    margin: 0px;
+    font-size: 0.5rem;
+  }
+
+  .title-span {
+    font-size: 0.9rem;
+  }
+
+  .account {
+    padding: 3%;
+  }
+
+  #switch {
+    width: 15px;
+    height: 5px;
+    top: 10px;
+  }
+
+  .slider:before {
+    height: 5px;
+    width: 5px;
+    left: 1px;
+    top: 0;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+
+  /* navbar */
+  .item2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    justify-self: center;
+  }
+  .item3 {
+    grid-column-start: 7;
+  }
+  .navbarItems {
+    margin: 0px;
+    column-gap: 0px;
+  }
+  .btn-home {
+    padding: 2%;
+  }
+  /* mainboard */
+  .main {
+    grid-template-columns: 1fr;
+    margin-top: 6%;
+    width: 70%;
+  }
+
+  /* grid item 1 */
+  .itemMain1 {
+    font-size: 1.8rem;
+    margin-top: 4%;
+  }
+
+  .text-small {
+    font-size: 0.8rem;
+  }
+
+  .text-button {
+    font-size: 0.8rem;
+    margin-left: 1px;
+    margin-bottom: 10px;
+  }
+
+  .circle {
+    transform: rotate3d(-12, 10, 12, 90deg);
+    left: 42%;
+    width: 18%;
+    height: 20%;
+  }
+
+  .account2 {
+    margin-right: 10px;
+    padding: 7px;
+    font-size: 0.6rem;
+    margin-bottom: 10%;
+  }
+
+  .text-account2 {
+    margin-inline: 0px;
+  }
+
+  /* grid item 2 */
+  .itemMain2 {
+    background-size: 45%;
+    height: 250px;
+  }
+
+  .text-time {
+    margin-top: 3px;
+    padding: 2px;
+  }
+
+  .add-icon {
+    top: 58%;
+    left: 33%;
+    font-size: 0.5rem;
+  }
+
+  /* grid item 3 */
+
+  .itemMain3 {
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 250px;
+  }
+
+  .tag-number {
+    font-size: 0.5rem;
+  }
+
+  .span-3 {
+    font-size: 0.6rem;
+  }
+
+  .section-platform {
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 195px;
+  }
+  .section-game {
+    padding: 2px;
+  }
+
+  .space-text {
+    margin-bottom: 20px;
+  }
+
+  .btn-platform {
+    padding: 6px;
+    width: 65px;
+    margin-top: -100px;
+  }
+
+  .search-input {
+    font-size: 0.6rem;
+    width: 80%;
+  }
+
+  .order-button {
+    font-size: 0.5rem;
+  }
+
+  .order-user {
+    padding: 2px;
+    margin-right: 5px;
+    font-size: 0.6rem;
+  }
+
+  .name-user {
+    font-size: 0.6rem;
+    margin-right: 5px;
+  }
+
+  .avatar-user {
+    padding: 1px;
+    font-size: 0.6rem;
+    margin-left: 1%;
+  }
+  .B {
+    margin-left: -2px !important;
+  }
+
+  .userJoin-btn {
+    padding: 2px;
+    margin-bottom: 1px;
+  }
+
+  .search-button {
+    padding: 10px;
+    font-size: 0.6rem;
+    margin-top: 10px;
+  }
+  .search-container {
+    height: 80px;
+  }
+  .divider-section-search {
+    margin-bottom: 5%;
+  }
+
+  /* categories */
+
+  .box-category {
+    height: 65px;
+    width: 145px;
+    padding: 4px;
+  }
+
+  .title-cat {
+    margin-top: 60px;
+  }
+
+  .box-text {
+    font-size: 0.5rem;
+  }
+
+  .box-index {
+    font-size: 0.5rem;
+  }
+  .custom-color {
+    font-size: 0.5rem;
+  }
+  .box-gabs {
+    margin-top: 1%;
+  }
+  .btn-arrow {
+    margin-top: 2px !important;
+  }
+
+  .grid-category {
+    grid-gap: 0.5em;
+    margin-top: 5px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .circle1 {
+    top: 3% !important;
+  }
+  .circle2 {
+    top: 9% !important;
+  }
+  .circle3 {
+    top: 15% !important;
+  }
+  /* login */
+  .container-login {
+    width: 150px;
+    padding: 5px;
+  }
+
+  .data-login {
+    width: 80px;
+    padding-block: 5px;
+    margin-inline: 20%;
+    margin-bottom: 10px;
+  }
+
+  .btn-login {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .title-login {
+    margin-inline: 35%;
+  }
+
+  .text-input-login {
+    margin-inline: 20%;
+  }
+}
+
+@media (min-width: 720px) {
+  /* app */
+  button {
+    margin: 0px;
+    font-size: 0.8rem;
+  }
+
+  .title-span {
+    font-size: 1.4rem;
+  }
+
+  .account {
+    padding: 4%;
+  }
+
+  #switch {
+    width: 35px;
+    height: 15px;
+    top: 3px;
+  }
+
+  .slider:before {
+    height: 13px;
+    width: 10px;
+    left: 1px;
+    top: 1px;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+
+  /* navbar */
+  .item2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    justify-self: center;
+  }
+  .item3 {
+    grid-column-start: 7;
+  }
+  .navbarItems {
+    margin: 15px;
+    column-gap: 0px;
+  }
+  .btn-home {
+    padding: 3%;
+  }
+  /* mainboard */
+  .main {
+    grid-template-columns: 1fr;
+    margin-top: 6%;
+    width: 70%;
+  }
+
+  /* grid item 1 */
+  .itemMain1 {
+    font-size: 3rem;
+    margin-top: 3%;
+    height: 400px;
+  }
+
+  .text-small {
+    font-size: 0.8rem;
+  }
+
+  .text-button {
+    font-size: 0.8rem;
+    margin-left: 1px;
+    margin-bottom: 10px;
+  }
+
+  .circle {
+    transform: rotate3d(-12, 10, 12, 90deg);
+    left: 42%;
+    width: 18%;
+    height: 20%;
+  }
+
+  .account2 {
+    margin-right: 10%;
+    padding: 12px;
+    font-size: 0.8rem;
+    margin-bottom: 10%;
+  }
+
+  .text-account2 {
+    margin-inline: 0px;
+  }
+
+  /* grid item 2 */
+  .itemMain2 {
+    background-size: 38%;
+    height: 400px;
+  }
+
+  .text-time {
+    margin-top: 3px;
+    padding: 2px;
+  }
+
+  .add-icon {
+    top: 47.5%;
+    left: 35.8%;
+    font-size: 0.5rem;
+  }
+
+  /* grid item 3 */
+
+  .itemMain3 {
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 400px;
+  }
+
+  .tag-number {
+    font-size: 1.2rem;
+  }
+
+  .span-3 {
+    font-size: 0.8rem;
+  }
+
+  .section-platform {
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 380px;
+  }
+  .section-game {
+    padding: 5px;
+  }
+
+  .space-text {
+    margin-bottom: 20px;
+  }
+
+  .btn-platform {
+    padding: 6px;
+    width: 126px;
+    margin-top: -100px;
+  }
+
+  .search-input {
+    font-size: 0.9rem;
+    width: 80%;
+  }
+
+  .order-button {
+    font-size: 0.8rem;
+  }
+
+  .order-user {
+    padding: 4px;
+    margin-right: 10px;
+    font-size: 0.8rem;
+  }
+
+  .name-user {
+    font-size: 0.8rem;
+    margin-right: 5px;
+  }
+
+  .avatar-user {
+    padding: 2px;
+    font-size: 0.8rem;
+    margin-left: 1%;
+  }
+  .B {
+    margin-left: -2px !important;
+  }
+
+  .userJoin-btn {
+    padding: 3px;
+    margin-bottom: 1px;
+  }
+
+  .search-button {
+    padding: 20px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+  .search-container {
+    height: 140px;
+  }
+  .divider-section-search {
+    margin-bottom: 5%;
+  }
+
+  /* categories */
+
+  .box-category {
+    height: 110px;
+    width: 180px;
+    padding: 15px;
+  }
+
+  .title-cat {
+    margin-top: 20%;
+  }
+
+  .box-text {
+    font-size: 0.8rem;
+  }
+
+  .box-index {
+    font-size: 0.8rem;
+  }
+  .custom-color {
+    font-size: 1.2rem;
+  }
+  .box-gabs {
+    margin-top: 10%;
+  }
+  .btn-arrow {
+    margin-top: 20px !important;
+  }
+
+  .grid-category {
+    grid-gap: 0.4em;
+    margin-top: 8%;
+    margin-bottom: 4px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .circle1 {
+    top: 3% !important;
+  }
+  .circle2 {
+    top: 8% !important;
+  }
+  .circle3 {
+    top: 13% !important;
+  }
+  /* login */
+  .container-login {
+    width: 350px;
+    padding: 15px;
+  }
+
+  .data-login {
+    width: 200px;
+    padding-block: 5px;
+    margin-inline: 20%;
+    margin-bottom: 20px;
+  }
+
+  .btn-login {
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .title-login {
+    margin-inline: 35%;
+  }
+
+  .text-input-login {
+    margin-inline: 20%;
+  }
+}
+
+@media (min-width: 1366px) {
+  /* app */
+  button {
+    margin: 0px;
+    font-size: 1.3rem;
+  }
+
+  .title-span {
+    font-size: 1.8rem;
+  }
+
+  .account {
+    padding: 4%;
+    margin-bottom: 20px;
+  }
+
+  #switch {
+    width: 60px;
+    height: 25px;
+    top: -9%;
+  }
+
+  .slider:before {
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    top: 1px;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  /* navbar */
+  .navbarItems {
+    margin: 30px;
+    column-gap: 5px;
+  }
+  .btn-home {
+    padding: 5%;
+  }
+  /* mainboard */
+  .main {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2%;
+    height: 680px;
+    width: 1200px;
+  }
+
+  /* grid item 1 */
+  .itemMain1 {
+    font-size: 4rem;
+    margin-top: 7%;
+    height: 680px;
+    margin-bottom: 5%;
+  }
+
+  .text-small {
+    font-size: 1.2rem;
+  }
+
+  .text-button {
+    font-size: 1.2rem;
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+
+  .circle {
+    transform: rotate3d(20, 10, -20, 90deg);
+    left: 9% !important;
+    width: 23%;
+    height: 30%;
+    opacity: 0.6;
+  }
+
+  .account2 {
+    margin-right: 15px;
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .text-account2 {
+    margin-inline: 2px;
+  }
+
+  /* grid item 2 */
+  .itemMain2 {
+    height: 680px;
+    background-size: 85%;
+  }
+
+  .text-time {
+    margin-top: 8%;
+    padding: 7px;
+  }
+
+  .add-icon {
+    top: 37%;
+    left: 40%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* grid item 3 */
+
+  .itemMain3 {
+    margin-left: 3%;
+    height: 680px;
+    margin-right: 3%;
+  }
+
+  .tag-number {
+    font-size: 1.5rem;
+  }
+
+  .span-3 {
+    font-size: 1rem;
+  }
+
+  .section-platform {
+    padding: 6px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 330px;
+    height: 40px;
+  }
+  .section-game {
+    padding: 20px;
+  }
+
+  .space-text {
+    margin-bottom: 20px;
+  }
+
+  .btn-platform {
+    padding: 2px;
+    width: 110px;
+    height: 40px;
+    margin-top: 0.1px;
+  }
+
+  .search-input {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+
+  .order-button {
+    font-size: 0.9rem;
+  }
+
+  .order-user {
+    padding: 6px;
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+
+  .name-user {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+
+  .avatar-user {
+    padding: 2px;
+    font-size: 1rem;
+    margin-left: 1%;
+  }
+  .B {
+    margin-left: -2px !important;
+  }
+
+  .userJoin-btn {
+    padding: 1px;
+    margin-bottom: -10px;
+  }
+
+  .search-button {
+    padding: 30px;
+    font-size: 1rem;
+  }
+  .search-container {
+    height: 300px;
+  }
+  .divider-section-search {
+    margin-bottom: 5%;
+  }
+
+  /* categories */
+
+  .box-category {
+    height: 150px;
+    width: 290px;
+    padding: 5px;
+  }
+
+  .title-cat {
+    margin-top: 150px;
+  }
+
+  .box-text {
+    font-size: 1.2rem;
+  }
+
+  .box-index {
+    font-size: 1rem;
+  }
+  .custom-color {
+    font-size: 1.7rem;
+  }
+  .box-gabs {
+    margin-top: 8%;
+  }
+  .btn-arrow {
+    margin-top: 20px !important;
+  }
+
+  .grid-category {
+    grid-gap: 0.4em;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .circle1 {
+    top: 17% !important;
+  }
+  .circle2 {
+    top: 27% !important;
+  }
+  .circle3 {
+    top: 37% !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* app */
+  button {
+    margin: 0px;
+    font-size: 1.3rem;
+  }
+
+  .title-span {
+    font-size: 1.8rem;
+  }
+
+  .account {
+    padding: 4%;
+    margin-bottom: 20px;
+  }
+
+  #switch {
+    width: 60px;
+    height: 25px;
+    top: -8%;
+  }
+
+  .slider:before {
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    top: 1px;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  /* navbar */
+  .navbarItems {
+    margin: 30px;
+    column-gap: 10px;
+  }
+  .btn-home {
+    padding: 5%;
+  }
+  /* mainboard */
+  .main {
+    margin-top: 3%;
+    height: 720px;
+  }
+
+  /* grid item 1 */
+  .itemMain1 {
+    font-size: 4rem;
+    margin-top: 20%;
+    height: 720px;
+    margin-bottom: 10%;
+  }
+
+  .text-small {
+    font-size: 1rem;
+  }
+
+  .text-button {
+    font-size: 1rem;
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+
+  .circle {
+    transform: rotate3d(20, 10, -20, 90deg);
+    left: 12% !important;
+    width: 20%;
+    height: 30%;
+    opacity: 0.6;
+  }
+
+  .account2 {
+    margin-right: 5px;
+    padding: 5%;
+    font-size: 1.2rem;
+  }
+
+  .text-account2 {
+    margin-inline: 2px;
+  }
+
+  /* grid item 2 */
+  .itemMain2 {
+    height: 720px;
+    background-size: 90%;
+  }
+
+  .text-time {
+    margin-top: 5%;
+    padding: 10px;
+  }
+
+  .add-icon {
+    top: 33%;
+    left: 40%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* grid item 3 */
+
+  .itemMain3 {
+    margin-left: 3%;
+    height: 720px;
+    margin-right: 3%;
+  }
+
+  .tag-number {
+    font-size: 1.7rem;
+  }
+
+  .span-3 {
+    font-size: 1.4rem;
+  }
+
+  .section-platform {
+    padding: 8px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 330px;
+  }
+  .section-game {
+    padding: 20px;
+  }
+
+  .space-text {
+    margin-bottom: 20px;
+  }
+
+  .btn-platform {
+    padding: 2px;
+    width: 110px;
+    height: 40px;
+  }
+
+  .search-input {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  .order-button {
+    font-size: 1.2rem;
+  }
+
+  .order-user {
+    padding: 4px;
+    margin-right: 15px;
+    font-size: 1.3rem;
+  }
+
+  .name-user {
+    font-size: 1.3rem;
+    margin-right: 5px;
+  }
+
+  .avatar-user {
+    padding: 2px;
+    font-size: 1.3rem;
+    margin-left: 1%;
+  }
+  .B {
+    margin-left: -2px !important;
+  }
+
+  .userJoin-btn {
+    padding: 2px;
+    margin-bottom: -10px;
+  }
+
+  .search-button {
+    padding: 30px;
+    font-size: 1.2rem;
+  }
+  .search-container {
+    height: 270px;
+  }
+  .divider-section-search {
+    margin-bottom: 5%;
+  }
+
+  /* categories */
+
+  .box-category {
+    height: 190px;
+    width: 310px;
+    padding: 5px;
+  }
+
+  .title-cat {
+    margin-top: 15%;
+  }
+
+  .box-text {
+    font-size: 1.2rem;
+  }
+
+  .box-index {
+    font-size: 1rem;
+  }
+  .custom-color {
+    font-size: 1.7rem;
+  }
+  .box-gabs {
+    margin-top: 8%;
+  }
+  .btn-arrow {
+    margin-top: 20px !important;
+  }
+
+  .grid-category {
+    grid-gap: 0.4em;
+    margin-top: 60px;
+    margin-bottom: 10%;
+  }
+  .circle1 {
+    top: 22% !important;
+  }
+  .circle2 {
+    top: 29% !important;
+  }
+  .circle3 {
+    top: 37% !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  /* app */
+  button {
+    margin: 0px;
+    font-size: 1.3rem;
+  }
+
+  .title-span {
+    font-size: 1.8rem;
+  }
+
+  .account {
+    padding: 4%;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+
+  #switch {
+    width: 60px;
+    height: 25px;
+    top: -8%;
+    margin-right: 15px;
+  }
+
+  .slider:before {
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    top: 1px;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  /* navbar */
+  .navbarItems {
+    margin: 30px;
+    column-gap: 10px;
+  }
+  .btn-home {
+    padding: 5%;
+  }
+  /* mainboard */
+  .main {
+    margin-top: -10px;
+    height: 550px;
+  }
+
+  /* grid item 1 */
+  .itemMain1 {
+    font-size: 4rem;
+    margin-top: 10%;
+    height: 550px;
+    margin-bottom: 10%;
+  }
+
+  .text-small {
+    font-size: 1rem;
+  }
+
+  .text-button {
+    font-size: 1rem;
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+
+  .circle {
+    transform: rotate3d(20, 10, -20, 90deg);
+    left: 12% !important;
+    width: 27%;
+    height: 32%;
+    opacity: 0.6;
+  }
+
+  .account2 {
+    margin-right: 5px;
+    padding: 5%;
+    font-size: 1.2rem;
+  }
+
+  .text-account2 {
+    margin-inline: 2px;
+  }
+
+  /* grid item 2 */
+  .itemMain2 {
+    background-size: 62%;
+    height: 550px;
+  }
+
+  .text-time {
+    margin-top: 5%;
+    padding: 10px;
+  }
+
+  .add-icon {
+    top: 37.5%;
+    left: 41%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  /* grid item 3 */
+
+  .itemMain3 {
+    margin-left: 3%;
+    height: 550px;
+    margin-right: 3%;
+  }
+
+  .tag-number {
+    font-size: 1.5rem;
+  }
+
+  .span-3 {
+    font-size: 1rem;
+  }
+
+  .section-platform {
+    padding: 8px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    width: 330px;
+  }
+  .section-game {
+    padding: 12px;
+  }
+
+  .space-text {
+    margin-bottom: 20px;
+  }
+
+  .btn-platform {
+    padding: 2px;
+    width: 110px;
+    height: 40px;
+  }
+
+  .search-input {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+
+  .order-button {
+    font-size: 0.9rem;
+  }
+
+  .order-user {
+    padding: 6px;
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+
+  .name-user {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+
+  .avatar-user {
+    padding: 2px;
+    font-size: 1rem;
+    margin-left: 1%;
+  }
+  .B {
+    margin-left: -2px !important;
+  }
+
+  .userJoin-btn {
+    padding: 1px;
+    margin-bottom: -10px;
+  }
+
+  .search-button {
+    padding: 25px;
+    font-size: 0.9rem;
+  }
+  .search-container {
+    height: 180px;
+  }
+  .divider-section-search {
+    margin-bottom: 5%;
+  }
+
+  /* categories */
+
+  .box-category {
+    height: 190px;
+    width: 320px;
+    padding: 5px;
+  }
+
+  .title-cat {
+    margin-top: 15%;
+  }
+
+  .box-text {
+    font-size: 1.2rem;
+  }
+
+  .box-index {
+    font-size: 1rem;
+  }
+  .custom-color {
+    font-size: 1.7rem;
+  }
+  .box-gabs {
+    margin-top: 8%;
+  }
+  .btn-arrow {
+    margin-top: 20px !important;
+  }
+
+  .grid-category {
+    grid-gap: 1.5em;
+    margin-top: 60px;
+    margin-bottom: 10%;
+  }
+  .circle1 {
+    top: 22% !important;
+  }
+  .circle2 {
+    top: 30% !important;
+  }
+  .circle3 {
+    top: 38% !important;
+  }
+}
+@media (min-width: 1920px) {
+  /* app */
+  button {
+    margin: 0px;
+    font-size: 1.3rem;
+  }
+
+  .title-span {
+    font-size: 1.8rem;
+  }
+
+  .account {
+    padding: 4%;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
+
+  #switch {
+    width: 60px;
+    height: 25px;
+    top: -8%;
+    margin-right: 15px;
+  }
+
+  .slider:before {
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    top: 1px;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+
+  /* navbar */
+  .navbarItems {
+    margin: 30px;
+    column-gap: 10px;
+  }
+  .btn-home {
+    padding: 5%;
+  }
+  /* mainboard */
+  .main {
+    margin-top: -10px;
+    width: 1500px;
+    height: 600px;
+  }
+
+  /* grid item 1 */
+  .itemMain1 {
+    font-size: 4rem;
+    margin-top: 10%;
+    height: 600px;
+    margin-bottom: 10%;
+  }
+
+  .text-small {
+    font-size: 1rem;
+  }
+
+  .text-button {
+    font-size: 1rem;
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+
+  .circle {
+    transform: rotate3d(20, 10, -20, 90deg);
+    left: 14% !important;
+    width: 20%;
+    height: 26%;
+    opacity: 0.6;
+  }
+
+  .account2 {
+    margin-right: 5px;
+    padding: 5%;
+    font-size: 1.2rem;
+  }
+
+  .text-account2 {
+    margin-inline: 2px;
+  }
+
+  /* grid item 2 */
+  .itemMain2 {
+    height: 600px;
+    background-size: 62%;
+  }
+
+  .text-time {
+    margin-top: 5%;
+    padding: 10px;
+  }
+
+  .add-icon {
+    top: 25%;
+    left: 42%;
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  /* grid item 3 */
+
+  .itemMain3 {
+    margin-left: 3%;
+    height: 600px;
+    margin-right: 3%;
+  }
+
+  .tag-number {
+    font-size: 1.5rem;
+  }
+
+  .span-3 {
+    font-size: 1rem;
+  }
+
+  .section-platform {
+    padding: 8px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    width: 330px;
+  }
+  .section-game {
+    padding: 12px;
+  }
+
+  .space-text {
+    margin-bottom: 20px;
+  }
+
+  .btn-platform {
+    padding: 2px;
+    width: 110px;
+    height: 40px;
+  }
+
+  .search-input {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+
+  .order-button {
+    font-size: 0.9rem;
+  }
+
+  .order-user {
+    padding: 6px;
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+
+  .name-user {
+    font-size: 1rem;
+    margin-right: 5px;
+  }
+
+  .avatar-user {
+    padding: 2px;
+    font-size: 1rem;
+    margin-left: 1%;
+  }
+  .B {
+    margin-left: -2px !important;
+  }
+
+  .userJoin-btn {
+    padding: 1px;
+    margin-bottom: -10px;
+  }
+
+  .search-button {
+    padding: 25px;
+    font-size: 0.9rem;
+  }
+  .search-container {
+    height: 200px;
+  }
+  .divider-section-search {
+    margin-bottom: 5%;
+  }
+
+  /* categories */
+
+  .box-category {
+    height: 220px;
+    width: 360px;
+    margin-left: 5%;
+  }
+
+  .title-cat {
+    margin-left: 11%;
+    margin-top: 15%;
+  }
+
+  .box-text {
+    margin-left: 5%;
+    font-size: 1.2rem;
+  }
+
+  .box-index {
+    margin-left: 5%;
+    font-size: 1rem;
+  }
+  .custom-color {
+    margin-left: 5%;
+    font-size: 1.7rem;
+  }
+  .box-gabs {
+    margin-top: 8%;
+  }
+  .btn-arrow {
+    margin-left: 5%;
+    margin-top: 20px !important;
+  }
+
+  .grid-category {
+    margin-left: 10%;
+    margin-right: 15%;
+    grid-gap: 0.5em;
+  }
+  .circle1 {
+    top: 12% !important;
+  }
+  .circle2 {
+    top: 18% !important;
+  }
+  .circle3 {
+    top: 24% !important;
+  }
+}

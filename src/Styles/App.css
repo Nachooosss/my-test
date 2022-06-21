@@ -1,0 +1,244 @@
+html {
+  --primary: #1a2028;
+  --dark-primary: #13171c;
+  --dark-primary-alternative: #13171c;
+  --light-primary: rgb(94, 94, 94);
+  --secundary: #fe8944;
+  --dark-secundary: #af4102;
+  --alternative: #7d35ef;
+  --mainboard-color: #21272f;
+  --mainboard-color-save: #21272f;
+  --font-color: white;
+  --font-color-alternative: black;
+  --shadow: rgba(22, 22, 22, 0.72);
+  --character: url("./../img/character1.png");
+  --character2: url("./../img/character2.png");
+  --character1: url("./../img/character1.png");
+}
+
+html[data-theme="light"] {
+  --primary: white;
+  --dark-primary: #13171c;
+  --light-primary: white;
+  --secundary: #7d35ef;
+  --dark-secundary: #320280;
+  --alternative: #fe8944;
+  --mainboard-color: white;
+  --font-color: black;
+  --font-color-alternative: white;
+  --dark-primary-alternative: transparent;
+  --character: url("./../img/character2.png");
+  --character2: url("./../img/character1.png");
+  --character1: url("./../img/character2.png");
+}
+
+body {
+  background: var(--primary);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  margin: 7px;
+  background: transparent;
+  border: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--font-color);
+}
+
+span {
+  color: var(--font-color);
+}
+
+input {
+  border: 0px !important;
+}
+
+h3 {
+  color: var(--font-color);
+}
+
+.title-span {
+  color: var(--font-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  margin: 0;
+  padding: 0;
+}
+
+.account {
+  background: var(--dark-primary);
+  padding: 4%;
+  border: 1px solid var(--light-primary);
+  border-radius: 20px;
+  margin: 0;
+}
+
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+#switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--secundary);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--light-primary);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.part1-login {
+  bottom: 0;
+  top: 0;
+  width: 0%;
+  left: 0;
+  background-color: var(--secundary);
+  z-index: 1;
+  position: fixed;
+  background-image: var(--character1);
+  background-repeat: no-repeat;
+  background-position-x: left !important;
+  background-position-y: bottom;
+  background-size: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.part2-login {
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 0%;
+  background-color: var(--alternative);
+  position: fixed;
+  z-index: 1;
+  background-image: var(--character2);
+  background-repeat: no-repeat;
+  background-position-x: right !important;
+  background-position-y: bottom;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-size: 50%;
+}
+
+.login {
+  transition: 2s;
+  background-color: transparent;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: grid;
+  position: fixed;
+  margin-top: -500px;
+}
+.container-login {
+  background-color: var(--primary);
+  margin: auto;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid var(--secundary);
+  box-shadow: 2px 2px 7px 2px var(--shadow);
+  padding: 10px;
+}
+
+.data-login {
+  background-color: var(--font-color);
+  color: var(--font-color-alternative);
+  width: 150px;
+  padding-block: 5px;
+  margin-inline: 50px;
+  margin-bottom: 20px;
+  border: 1px solid var(--secundary) !important;
+  border-radius: 15px;
+}
+
+.btn-login {
+  margin: 24px;
+  color: var(--font-color);
+  background-color: var(--primary);
+  box-shadow: 2px 2px 7px 2px var(--font-color-alternative);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--secundary);
+}
+
+.title-login {
+  margin-inline: 75px;
+}
+
+.text-input-login{
+  margin-inline: 75px;
+}
+
+.signup {
+  background-color: transparent;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: grid;
+  position: fixed;
+}
+.container-signup {
+  background-color: var(--primary);
+  margin: auto;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid var(--secundary);
+  box-shadow: 2px 2px 7px 2px var(--shadow);
+  padding: 10px;
+}
