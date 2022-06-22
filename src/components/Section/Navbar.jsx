@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="grid-container navbarItems">
         <div className="grid-item item1">
           <NavLink to="#">
-            <button className="btn-home" to="/">
+            <button className="btn-home" onclick="window.location.href='#'" >
               Home
             </button>
           </NavLink>

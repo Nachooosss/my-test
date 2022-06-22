@@ -18,9 +18,9 @@ OnePlus 6	1080 x 2280
 iPhone XS	1125 x 2436 +1 more phones
 iPhone XS Max	1242 x 2688 +1 more phones
 iPhone 7	1334 x 750 +1 more phones
-**Samsung Galaxy S6	1440 x 2560 +10 more phones
-**LG G6	1440 x 2880 +1 more phones	
-**Samsung Galaxy S9	1440 x 2960 +4 more phones
+Samsung Galaxy S6	1440 x 2560 +10 more phones
+LG G6	1440 x 2880 +1 more phones	
+Samsung Galaxy S9	1440 x 2960 +4 more phones
 iPhone 6S Plus	1920 x 1080 +5 more phones
 iPhone X	2046 × 1125	
 Huawei Mate 10 Plus	2.160 x 1.080	
@@ -61,6 +61,7 @@ Samsung Galaxy S8	2960 x 1440
 
   /* grid item 1 */
   .itemMain1 {
+    text-align: center;
     font-size: 2rem;
   }
   .circles {
@@ -117,6 +118,7 @@ Samsung Galaxy S8	2960 x 1440
 
   /* grid item 1 */
   .itemMain1 {
+    text-align: center;
     font-size: 2rem;
   }
 
@@ -174,6 +176,7 @@ Samsung Galaxy S8	2960 x 1440
 
   /* grid item 1 */
   .itemMain1 {
+    text-align: center;
     font-size: 2rem;
   }
 
@@ -282,7 +285,7 @@ Samsung Galaxy S8	2960 x 1440
   }
 
   .circles {
-    height: 27.1%;
+    height: 25%;
   }
 
   .search-container {
@@ -382,7 +385,11 @@ Samsung Galaxy S8	2960 x 1440
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .itemMain1 {
+    text-align: start;
+  }
   /* grid item 2 */
+
   .itemMain2 {
     background-size: 70%;
   }
@@ -403,7 +410,22 @@ Samsung Galaxy S8	2960 x 1440
     font-size: x-large;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1440px) and (min-height: 2560px) {
+  .circles {
+    height: 13%;
+  }
+}
+@media (min-width: 1440px) and (min-height: 2880px) {
+  .circles {
+    height: 12%;
+  }
+}
+@media (min-width: 1440px) and (min-height: 2960px) {
+  .circles {
+    height: 11%;
+  }
+}
+@media (min-width: 1440px) and (max-height: 900px) {
   .circles {
     height: 38%;
   }
@@ -419,9 +441,10 @@ Samsung Galaxy S8	2960 x 1440
 @media (min-width: 1600px) {
   .circle {
     width: 44%;
+    height: 30%;
   }
   .circles {
-    margin-top: 6%;
+    margin-top: 4%;
   }
   .search-container {
     height: 200px;
@@ -435,6 +458,9 @@ Samsung Galaxy S8	2960 x 1440
   }
 }
 @media (min-width: 1920px) {
+  .itemMain1 {
+    text-align: start;
+  }
   .circles {
     height: 30%;
     margin-top: 3%;

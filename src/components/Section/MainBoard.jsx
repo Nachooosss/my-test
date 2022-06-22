@@ -1,7 +1,14 @@
 import React from "react";
 import "./../../Styles/MainBoard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserPlus, faFilter } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUserPlus,
+  faFilter,
+  faUser,
+  faPlay,
+  faVideoCamera,
+  faGamepad,
+} from "@fortawesome/free-solid-svg-icons";
 import AuthContext from "../../Context/AuthProvider";
 import { NavLink } from "react-router-dom";
 import { open_login } from "./../Auth/Autentication";
@@ -74,13 +81,12 @@ const MainBoard = () => {
       ],
     },
   ];
-  const [gameSelected, setGameSelected] = React.useState([]);
-  const [name, setname] = React.useState({});
+  const [gameSelected, setGameSelected] = React.useState(db[0].users);
+  const [name, setname] = React.useState("game-1");
   const [hours, setHours] = React.useState("00:00 --");
   const [userCapture, setuserCapture] = React.useState("");
   const [hoursDisplay, sethoursDisplay] = React.useState("00");
   const [MinutesDisplay, setMinutesDisplay] = React.useState("00");
-
   //time
   var sufijo = " am";
   var currentTime = new Date();
@@ -120,6 +126,9 @@ const MainBoard = () => {
     for (let index = 0; index < db.length; index++) {
       if (db[index].game === name) {
         setGameSelected(db[index].users);
+        return;
+      } else {
+        setGameSelected([]);
       }
     }
     return;
@@ -187,9 +196,30 @@ const MainBoard = () => {
             <br />
             <section className="grid-container">
               <div className="grid-item section-platform">
-                <button className="btn-platform">Party</button>
-                <button className="btn-platform">Matchs</button>
-                <button className="btn-platform">Streams</button>
+                <button className="btn-platform">
+                  <FontAwesomeIcon
+                    icon={faPlay}
+                    size="sm"
+                    className="icon-btn"
+                  />
+                  Party
+                </button>
+                <button className="btn-platform">
+                  <FontAwesomeIcon
+                    icon={faGamepad}
+                    size="sm"
+                    className="icon-btn"
+                  />
+                  Matchs
+                </button>
+                <button className="btn-platform">
+                  <FontAwesomeIcon
+                    icon={faVideoCamera}
+                    size="sm"
+                    className="icon-btn"
+                  />
+                  Streams
+                </button>
               </div>
             </section>
             <span className="title-span span-3">
@@ -201,6 +231,7 @@ const MainBoard = () => {
                 <div>
                   <input
                     type="search"
+                    value={name}
                     placeholder="input example: game-1 or game-2"
                     className="search-input"
                     onChange={(e) => setname(e.target.value)}
@@ -227,8 +258,12 @@ const MainBoard = () => {
                         <span className="name-user">{gameSelected}</span>
                       </div>
                       <div className="grid-item part2">
-                        <i className="avatar-user">A</i>
-                        <i className="avatar-user B">B</i>
+                        <i className="avatar-user">
+                          <FontAwesomeIcon icon={faUser} size="sm" />
+                        </i>
+                        <i className="avatar-user B">
+                          <FontAwesomeIcon icon={faUser} size="sm" />
+                        </i>
                       </div>
                       <div className="grid-item part3">
                         <button
