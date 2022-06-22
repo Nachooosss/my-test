@@ -30,10 +30,9 @@ Samsung Galaxy S8	2960 x 1440
 
 /*  *360×640 (móvil pequeño): 22,64%.
     *375×667 (móvil medio): 5%.
-    *720×1280 (móvil grande): 2,74%.
     *1366×768 (ordenador portátil medio): 11,98%.
     *1440×900 (escritorio medio): 3,17%.
-    *1600×900 (escritorio medio): 3,17%.
+    *1600×900 (escritorio medsio): 3,17%.
     *1080x2400 xiaomi redmi note 10
     *1920×1080 (escritorio grande): 7,35%. */
 
@@ -52,7 +51,7 @@ Samsung Galaxy S8	2960 x 1440
   #switch {
     width: 30%;
     height: 25%;
-    margin-bottom: 5%;
+    top: 8%;
   }
 
   /* mainboard */
@@ -65,11 +64,13 @@ Samsung Galaxy S8	2960 x 1440
     font-size: 2rem;
   }
   .circles {
-    margin-left: 15%;
+    width: 60%;
+    height: 40%;
   }
 
   .circle {
-    width: 40%;
+    margin-left: 5%;
+    height: 35%;
     margin-top: -4%;
   }
   /* grid item 2 */
@@ -81,6 +82,9 @@ Samsung Galaxy S8	2960 x 1440
     font-size: xx-small;
   }
 
+  .search-container {
+    height: 100px;
+  }
   /* categories */
 
   .grid-category {
@@ -117,13 +121,14 @@ Samsung Galaxy S8	2960 x 1440
   }
 
   .circles {
-    margin-left: 12%;
-    margin-top: 10%;
+    width: 60%;
+    height: 30%;
   }
 
   .circle {
-    width: 62%;
-    margin-top: -16%;
+    margin-left: 5%;
+    height: 35%;
+    margin-top: -4%;
   }
   /* grid item 2 */
 
@@ -134,6 +139,9 @@ Samsung Galaxy S8	2960 x 1440
     font-size: xx-small;
   }
 
+  .search-container {
+    height: 120px;
+  }
   /* categories */
 
   .grid-category {
@@ -170,13 +178,15 @@ Samsung Galaxy S8	2960 x 1440
   }
 
   .circles {
-    margin-left: 12%;
+    width: 60%;
+    height: 30%;
     margin-top: 10%;
   }
 
   .circle {
-    width: 62%;
-    margin-top: -16%;
+    margin-left: 5%;
+    height: 25%;
+    margin-top: -8%;
   }
   /* grid item 2 */
 
@@ -185,6 +195,10 @@ Samsung Galaxy S8	2960 x 1440
   }
   .add-icon {
     font-size: xx-small;
+  }
+
+  .search-container {
+    height: 120px;
   }
 
   /* categories */
@@ -197,34 +211,48 @@ Samsung Galaxy S8	2960 x 1440
     position: absolute;
   }
 }
-
 @media (min-width: 480px) {
   .circles {
-    margin-left: 6%;
+    width: 50%;
+    height: 20%;
+    margin-top: 8%;
   }
+
   .circle {
-    margin-top: -20%;
+    margin-top: -4%;
+  }
+
+  .search-container {
+    height: 140px;
   }
 }
 @media (min-width: 540px) {
   .circles {
-    margin-top: 10%;
-    margin-left: 2%;
+    margin-top: 4%;
+  }
+
+  .circle {
+    width: 60%;
+    margin-left: 14%;
   }
 }
 @media (min-width: 640px) {
-  .circles {
-    margin-left: -1%;
-    margin-top: 14%;
-  }
   .circle {
-    margin-top: -26%;
+    margin-left: 8%;
+  }
+
+  .circles {
+    height: 16%;
   }
   .grid-category {
     grid-template-columns: 1fr 1fr;
   }
   .title-login {
     margin-left: -9%;
+  }
+
+  .search-container {
+    height: 240px;
   }
 }
 @media (min-width: 720px) {
@@ -248,12 +276,17 @@ Samsung Galaxy S8	2960 x 1440
     font-size: 4rem;
   }
 
-  .circles {
-    margin-left: 1%;
-    margin-top: 7%;
-  }
   .circle {
-    margin-top: -16%;
+    margin-left: 0%;
+    width: 80%;
+  }
+
+  .circles {
+    height: 27.1%;
+  }
+
+  .search-container {
+    height: 240px;
   }
   /* categories */
 
@@ -262,11 +295,8 @@ Samsung Galaxy S8	2960 x 1440
   }
 }
 @media (min-width: 828px) {
-  .circle {
-    margin-top: -28%;
-  }
   .circles {
-    margin-top: 14%;
+    height: 20%;
   }
 }
 @media (min-width: 1080px) {
@@ -288,30 +318,39 @@ Samsung Galaxy S8	2960 x 1440
 
   /* grid item 1 */
 
-  .circles {
+  .circle {
     margin-left: -5%;
-    margin-top: 14.5%;
+    width: 70%;
+  }
+
+  .circles {
+    height: 15.2%;
+  }
+
+  .search-container {
+    height: 300px;
   }
 }
-
+@media (min-width: 1125px) {
+  .circles {
+    height: 14.3%;
+  }
+}
 @media (min-width: 1242px) {
-  .circles {
-    margin-left: -7%;
-    margin-top: 18%;
-  }
   .circle {
-    margin-top: -34%;
+    width: 60%;
+  }
+  .circles {
+    height: 12.7%;
   }
 }
-
 @media (min-width: 1334px) {
-  .circles {
-    margin-left: -1%;
-    margin-top: 5%;
-  }
   .circle {
-    margin-top: -2%;
-    width: 37%;
+    width: 50%;
+    margin-top: -3%;
+  }
+  .circles {
+    height: 44.9%;
   }
 }
 @media (min-width: 1366px) {
@@ -332,8 +371,13 @@ Samsung Galaxy S8	2960 x 1440
 
   .circles {
     margin-top: 3%;
-    margin-left: -1%;
+    margin-left: 1%;
   }
+
+  .search-container {
+    height: 280px;
+  }
+
   .main {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -359,14 +403,32 @@ Samsung Galaxy S8	2960 x 1440
     font-size: x-large;
   }
 }
-
 @media (min-width: 1440px) {
-  /* .circle2 {
-    bottom: 18%;
+  .circles {
+    height: 38%;
   }
-  .circle3 {
-    bottom: 35%;
-  } */
+
+  .search-container {
+    height: 310px;
+  }
+
+  #switch {
+    width: 10%;
+  }
+}
+@media (min-width: 1600px) {
+  .circle {
+    width: 44%;
+  }
+  .circles {
+    margin-top: 6%;
+  }
+  .search-container {
+    height: 200px;
+  }
+  .itemMain2 {
+    background-size: 60%;
+  }
 
   #switch {
     width: 10%;
@@ -374,12 +436,16 @@ Samsung Galaxy S8	2960 x 1440
 }
 @media (min-width: 1920px) {
   .circles {
-    margin-top: 4%;
-    margin-left: -4%;
+    height: 30%;
+    margin-top: 3%;
   }
 
   .circle {
-    margin-top: -5%;
+    width: 35%;
+    margin-top: -2%;
+  }
+  .main {
+    margin-bottom: 200px;
   }
 
   #switch {
@@ -388,20 +454,25 @@ Samsung Galaxy S8	2960 x 1440
   }
   /* grid item 2 */
   .itemMain2 {
-    background-size: 60%;
+    background-size: 55%;
   }
   .title-login {
     margin-left: -5%;
   }
 }
+@media (min-width: 2046px) {
+  .circles {
+    height: 28%;
+  }
+}
 @media (min-width: 2560px) {
   .circles {
-    margin-top: 5%;
-    margin-left: -5%;
+    height: 20%;
   }
 
   .circle {
-    margin-top: -7%;
+    width: 30%;
+    margin-top: -1%;
   }
 
   .itemMain2 {

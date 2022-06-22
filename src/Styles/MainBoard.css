@@ -3,19 +3,16 @@
   border-radius: 30px;
   width: 90%;
   margin: auto;
-  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 5%;
+  height: fit-content;
   box-shadow: 1px 3px 8px 1px var(--shadow);
-  height: 100%;
 }
 
 /* grid item 1 */
 .itemMain1 {
-  font-size: 4rem;
   margin: auto;
   margin-top: 5%;
   height: fit-content;
-  text-align: center;
 }
 
 .text-change {
@@ -31,15 +28,10 @@
   border-bottom-left-radius: 22%;
   border-bottom-right-radius: 22%;
   font-size: small;
-  border-style: outset;
   margin-left: 2px;
 }
 .circles {
   position: absolute;
-  width: 63%;
-  height: 100%;
-  margin-top: 3%;
-  margin-left: 2%;
 }
 
 .circle {
@@ -50,17 +42,13 @@
   border-radius: 100%;
   border-left: 0;
   border-right: 0;
-  width: 20%;
-  height: 12%;
-  margin-top: -1%;
 }
 .account2 {
   background: var(--light-primary);
-  margin-right: 20px;
   box-shadow: 2px 4px 8px 1px var(--shadow);
   border: 0px;
   margin-inline: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .text-account2 {
@@ -73,7 +61,7 @@
   background-color: var(--secundary);
   background-image: var(--character);
   background-repeat: no-repeat;
-  background-position-x: center !important;
+  background-position-x: center;
   background-position-y: bottom;
   padding-bottom: 60%;
   background-size: 60%;
@@ -83,11 +71,8 @@
   background: white;
   margin: auto;
   border-radius: 55px;
-  padding: 2px;
   width: 65%;
-  height: 90%;
   color: var(--secundary);
-  text-align: center;
   position: relative;
 }
 .add-icon {
@@ -97,8 +82,6 @@
   left: -15px;
   bottom: 50%;
   padding: 4%;
-  font-size: medium;
-  margin: 0;
   border-radius: 100%;
   position: absolute;
 }
@@ -121,37 +104,31 @@
 .itemMain3 {
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 5%;
   height: fit-content;
+  margin-top: 5%;
 }
 
 .tag-number {
   color: var(--font-color);
-  font-size: large;
   opacity: 0.6;
-}
-
-.span-3 {
-  font-size: medium;
 }
 
 .section-platform {
   background: var(--primary);
   padding: 2%;
   border-radius: 45px;
-  margin: auto;
   margin-top: 4%;
   margin-bottom: 4%;
   width: 100%;
   display: flex;
 }
 .section-game {
+  position: relative;
   background: var(--primary);
   padding: 3%;
   margin-top: 5%;
   margin-bottom: 5%;
   border-radius: 10px;
-  height: 300px;
 }
 
 .btn-platform {
@@ -164,6 +141,7 @@
   border-radius: 30px;
   height: 100%;
   width: 100%;
+  cursor: pointer;
 }
 
 .btn-platform:hover {
@@ -175,9 +153,9 @@
 .search-input {
   background: transparent;
   color: var(--font-color);
-  font-size: large;
-  border: 0;
+  font-size: large;;
   float: left;
+  width: 80%;
 }
 
 .order-button {
@@ -185,6 +163,7 @@
   color: var(--font-color);
   opacity: 0.3;
   font-size: large;
+  margin-block: 5%;
 }
 
 .order-user {
@@ -234,19 +213,18 @@
 
 .search-button {
   background: var(--font-color);
-  padding: 5%;
+  padding: 1%;
   border-radius: 10px;
   color: var(--font-color-alternative);
   font-size: medium;
 }
 .search-container {
   overflow-y: scroll;
-  height: 95%;
-  transition: 1s;
 }
 .divider-section-search {
-  border: 2.2px solid var(--light-primary);
+  border: 1px solid var(--light-primary);
   opacity: 0.5;
   height: 0.1px;
-  transition: 1s;
+  top: 0;
+  width: 99.9%;
 }

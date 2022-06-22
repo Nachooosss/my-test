@@ -76,7 +76,7 @@ const MainBoard = () => {
   ];
   const [gameSelected, setGameSelected] = React.useState([]);
   const [name, setname] = React.useState({});
-  const [hours, setHours] = React.useState("");
+  const [hours, setHours] = React.useState("00:00 --");
   const [userCapture, setuserCapture] = React.useState("");
   const [hoursDisplay, sethoursDisplay] = React.useState("00");
   const [MinutesDisplay, setMinutesDisplay] = React.useState("00");
@@ -145,14 +145,15 @@ const MainBoard = () => {
               <button className="text-button"> stream party</button> plaform
             </span>
             <br />
-            <button className="account2 account">
-              <span className="text-account2 text-account" onClick={open_login}>
-                Create account
-              </span>
-            </button>
-            <NavLink to="/signup">
-              <button> Sign in</button>
+
+            <NavLink to="/register">
+              <button className="account2 account">
+                <span className="text-account2 text-account">
+                  Create account
+                </span>
+              </button>
             </NavLink>
+            <button onClick={open_login}> Sign in</button>
           </div>
         </section>
         <section className="grid-item itemMain2">
@@ -184,7 +185,7 @@ const MainBoard = () => {
               <span className="tag-number">01.</span>Choose Platform
             </span>
             <br />
-            <section className="grid-container" >
+            <section className="grid-container">
               <div className="grid-item section-platform">
                 <button className="btn-platform">Party</button>
                 <button className="btn-platform">Matchs</button>
@@ -200,7 +201,7 @@ const MainBoard = () => {
                 <div>
                   <input
                     type="search"
-                    placeholder="input game-number"
+                    placeholder="input example: game-1 or game-2"
                     className="search-input"
                     onChange={(e) => setname(e.target.value)}
                   />

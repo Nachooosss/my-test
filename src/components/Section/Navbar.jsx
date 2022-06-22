@@ -28,7 +28,11 @@ const Navbar = () => {
     <>
       <div className="grid-container navbarItems">
         <div className="grid-item item1">
-          <button className="btn-home">Home</button>
+          <NavLink to="#">
+            <button className="btn-home" to="/">
+              Home
+            </button>
+          </NavLink>
           {EmptyButtons.map((value, index) => (
             <button key={index} className="btn">
               {value}
@@ -47,14 +51,14 @@ const Navbar = () => {
             />
             <span className="slider round"></span>
           </label>
-          <NavLink to="/signup">
-            <button className="btn-fn">Sign in</button>
-          </NavLink>
-          <button className="btn-fn account">
-            <span className="text-account" onClick={open_login}>
-              Create Account
-            </span>
+          <button className="btn-fn" onClick={open_login}>
+            Sign in
           </button>
+          <NavLink to="/register">
+            <button className="btn-fn account">
+              <span className="text-account">Create Account</span>
+            </button>
+          </NavLink>
         </div>
       </div>
     </>

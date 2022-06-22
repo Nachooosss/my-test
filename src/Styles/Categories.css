@@ -49,4 +49,5 @@
   background-position-x: center !important;
   background-position-y: bottom;
   background-size: contain;
+  cursor: pointer;
 }

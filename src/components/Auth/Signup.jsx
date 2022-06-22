@@ -4,24 +4,14 @@ import { NavLink } from "react-router-dom";
 const Signup = () => {
   return (
     <>
-      <div
-        className="grid-container signup"
-        id="signup"
-        style={{
-          alignItems: "center",
-          alignContent: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div className="grid-item container-signup">
-          <div>
-            <div className="title-span">Signup(only this)</div>;
+        <div className="page-signup">
+          <div className="grid-container container-signup" style={{justifyContent:"center"}}>
+            <div className="title-span">Create Account(only this)</div>
             <NavLink to="/">
-              <button className="btn-fn">Back</button>
+              <button className="btn-back2">Back</button>
             </NavLink>
           </div>
         </div>
-      </div>
     </>
   );
 };
