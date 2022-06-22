@@ -15,42 +15,40 @@ export function open_login() {
   } else {
     document.getElementById("part1-login").style.width = "50%";
   }
-  var posicion3;
-  posicion3 = document.getElementById("login").style.marginTop;
-  if (posicion3 !== "-500px") {
-    document.getElementById("login").style.marginTop = "-500px";
+  var hide;
+  hide = document.getElementById("hide-user-text").style.visibility;
+  if (hide === "hidden") {
+    document.getElementById("hide-user-text").style.visibility = "visible";
   } else {
-    document.getElementById("login").style.marginTop = "150px";
+    document.getElementById("hide-user-text").style.visibility = "hidden";
   }
 }
 const Autentication = () => {
   return (
     <>
-      <div className="part1-login" id="part1-login"></div>
-      <div className="part2-login" id="part2-login"></div>
-      <div
-        className="grid-container login"
-        id="login"
-        style={{
-          alignItems: "center",
-          alignContent: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div className="grid-item container-login">
-          <span className="title-span title-login">Gamor</span>
-          <br />
-          <h3 className="text-input-login">Username</h3>
-          <input type="text" id="data-login" className="data-login" />
-          <br />
-          <h3 className="text-input-login">Password</h3>
-          <input type="password" id="data-login" className="data-login" />
-          <br />
-          <button className="btn-login">Login</button>
-          <button className="btn-login" onClick={open_login}>
-            Back
-          </button>
-        </div>
+      <div className="part1-login" id="part1-login">
+        <br />
+        <h3 className="text-input-login1" id="hide-user-text">
+          Username
+        </h3>
+        <input type="text" id="data-login" className="data-login input-user" />
+        <br />
+        <button className="btn-login">Login</button>
+      </div>
+      <div className="part2-login" id="part2-login">
+        <span className="title-span title-login">Gamor</span>
+
+        <br />
+        <h3 className="text-input-login2">Password</h3>
+        <input
+          type="password"
+          id="data-login input-password"
+          className="data-login"
+        />
+        <br />
+        <button className="btn-back" onClick={open_login}>
+          Back
+        </button>
       </div>
     </>
   );

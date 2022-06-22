@@ -40,10 +40,10 @@ body {
 }
 
 button {
-  margin: 7px;
+  margin: 0;
   background: transparent;
   border: 0;
-  font-size: 1rem;
+  font-size: medium;
   font-weight: bold;
   color: var(--font-color);
 }
@@ -62,7 +62,7 @@ h3 {
 
 .title-span {
   color: var(--font-color);
-  font-size: 1.8rem;
+  font-size: xx-large;
   font-weight: bold;
   text-align: center;
 }
@@ -84,8 +84,8 @@ h3 {
 #switch {
   position: relative;
   display: inline-block;
-  width: 50px;
-  height: 25px;
+  width: 10%;
+  height: fit-content;
 }
 
 #switch input {
@@ -109,10 +109,10 @@ h3 {
 .slider:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
-  left: 3px;
-  bottom: 3px;
+  height: 90%;
+  width: 35%;
+  left: 2px;
+  bottom: 1px;
   background-color: var(--secundary);
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -127,9 +127,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(24px);
-  -ms-transform: translateX(24px);
-  transform: translateX(24px);
+  -webkit-transform: translateX(160%);
+  -ms-transform: translateX(160%);
+  transform: translateX(160%);
 }
 
 .slider.round {
@@ -152,7 +152,7 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   background-position-x: left !important;
   background-position-y: bottom;
-  background-size: 50%;
+  background-size: 60%;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -171,7 +171,7 @@ input:checked + .slider:before {
   background-position-y: bottom;
   -webkit-transition: 1s;
   transition: 1s;
-  background-size: 50%;
+  background-size: 60%;
 }
 
 .login {
@@ -184,46 +184,74 @@ input:checked + .slider:before {
   display: grid;
   position: fixed;
   margin-top: -500px;
-}
-.container-login {
-  background-color: var(--primary);
+  width: 100%;
+  height: fit-content;
   margin: auto;
-  width: 250px;
-  border-radius: 20px;
-  border: 1px solid var(--secundary);
-  box-shadow: 2px 2px 7px 2px var(--shadow);
-  padding: 10px;
 }
 
+.text-input-login1 {
+  text-align: end;
+  margin-top: 50%;
+  margin-inline: 9%;
+  position: relative;
+  visibility: hidden;
+}
+.text-input-login2 {
+  margin-top: 50%;
+  margin-inline: 8%;
+  text-align: start;
+}
+.container-login {
+  background-color: transparent;
+  height: fit-content;
+  text-align: center;
+  padding-block: 30%;
+  padding-inline: 60%;
+  margin-top: -500px;
+  margin-left: -60px;
+}
+
+.input-password {
+  float: left;
+}
+
+.input-user {
+  float: right;
+}
 .data-login {
   background-color: var(--font-color);
   color: var(--font-color-alternative);
-  width: 150px;
-  padding-block: 5px;
-  margin-inline: 50px;
-  margin-bottom: 20px;
+  padding-block: 1%;
+  margin-inline: 5%;
   border: 1px solid var(--secundary) !important;
   border-radius: 15px;
+  margin-top: 1%;
 }
 
 .btn-login {
-  margin: 24px;
+  float: right;
   color: var(--font-color);
   background-color: var(--primary);
   box-shadow: 2px 2px 7px 2px var(--font-color-alternative);
-  padding: 10px;
+  padding: 2%;
   border-radius: 10px;
+  margin-top: 5%;
+  border: 1px solid var(--secundary);
+  margin-right: 10%;
+  margin-left: 62%;
+}
+
+.btn-back {
+  float: left;
+  color: var(--font-color);
+  background-color: var(--primary);
+  box-shadow: 2px 2px 7px 2px var(--font-color-alternative);
+  padding: 2%;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-left: 10%;
   border: 1px solid var(--secundary);
 }
-
-.title-login {
-  margin-inline: 75px;
-}
-
-.text-input-login{
-  margin-inline: 75px;
-}
-
 .signup {
   background-color: transparent;
   z-index: 1;
@@ -236,9 +264,13 @@ input:checked + .slider:before {
 .container-signup {
   background-color: var(--primary);
   margin: auto;
-  width: 250px;
   border-radius: 20px;
   border: 1px solid var(--secundary);
   box-shadow: 2px 2px 7px 2px var(--shadow);
-  padding: 10px;
+  padding: 140px;
+}
+
+.title-login{
+  margin-left: -8%;
+  position: absolute;
 }

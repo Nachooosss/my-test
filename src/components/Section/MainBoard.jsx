@@ -78,8 +78,8 @@ const MainBoard = () => {
   const [name, setname] = React.useState({});
   const [hours, setHours] = React.useState("");
   const [userCapture, setuserCapture] = React.useState("");
-  const [hoursDisplay, sethoursDisplay] = React.useState("");
-  const [MinutesDisplay, setMinutesDisplay] = React.useState("");
+  const [hoursDisplay, sethoursDisplay] = React.useState("00");
+  const [MinutesDisplay, setMinutesDisplay] = React.useState("00");
 
   //time
   var sufijo = " am";
@@ -107,7 +107,7 @@ const MainBoard = () => {
     setHours(hoursDisplay + " : " + MinutesDisplay + " " + sufijo);
   };
 
-  setTimeout(showClock, 5000);
+  setTimeout(showClock, 1000);
 
   //
   function JoinUser(user) {
@@ -129,6 +129,11 @@ const MainBoard = () => {
       <div className="grid-container main">
         <section className="grid-item itemMain1">
           <div>
+            <div className="circles">
+              <div className="circle circle1"></div>
+              <div className="circle circle2"></div>
+              <div className="circle circle3"></div>
+            </div>
             <span>
               start <br /> <span className="text-change">streaming</span> <br />
               games <br />
@@ -149,9 +154,6 @@ const MainBoard = () => {
               <button> Sign in</button>
             </NavLink>
           </div>
-          <div className="circle circle1"></div>
-          <div className="circle circle2"></div>
-          <div className="circle circle3"></div>
         </section>
         <section className="grid-item itemMain2">
           <div
@@ -182,8 +184,8 @@ const MainBoard = () => {
               <span className="tag-number">01.</span>Choose Platform
             </span>
             <br />
-            <section>
-              <div className="section-platform">
+            <section className="grid-container" >
+              <div className="grid-item section-platform">
                 <button className="btn-platform">Party</button>
                 <button className="btn-platform">Matchs</button>
                 <button className="btn-platform">Streams</button>

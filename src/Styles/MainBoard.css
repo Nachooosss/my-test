@@ -1,18 +1,20 @@
 .main {
-  margin-top: 5%;
   background: var(--mainboard-color);
-  border-radius: 2%;
+  border-radius: 30px;
   width: 90%;
   margin: auto;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5%;
   box-shadow: 1px 3px 8px 1px var(--shadow);
+  height: 100%;
 }
 
 /* grid item 1 */
 .itemMain1 {
   font-size: 4rem;
   margin: auto;
-  max-width: max-content;
+  margin-top: 5%;
+  height: fit-content;
   text-align: center;
 }
 
@@ -28,25 +30,37 @@
   border-bottom: 1px var(--secundary) solid;
   border-bottom-left-radius: 22%;
   border-bottom-right-radius: 22%;
+  font-size: small;
   border-style: outset;
   margin-left: 2px;
 }
+.circles {
+  position: absolute;
+  width: 63%;
+  height: 100%;
+  margin-top: 3%;
+  margin-left: 2%;
+}
 
 .circle {
-  transform: rotate3d(12, 10, -12, 90deg);
-  border: 2px var(--alternative) solid;
-  opacity: 0.8;
-  position: absolute;
+  transform: rotate3d(10, 0, -10, 35deg);
+  border: 4px var(--alternative) solid;
+  opacity: 0.4;
+  position: relative;
   border-radius: 100%;
   border-left: 0;
   border-right: 0;
+  width: 20%;
+  height: 12%;
+  margin-top: -1%;
 }
-
 .account2 {
   background: var(--light-primary);
   margin-right: 20px;
   box-shadow: 2px 4px 8px 1px var(--shadow);
   border: 0px;
+  margin-inline: 5px;
+  margin-bottom: 20px;
 }
 
 .text-account2 {
@@ -61,24 +75,29 @@
   background-repeat: no-repeat;
   background-position-x: center !important;
   background-position-y: bottom;
-  background-size: 50%;
+  padding-bottom: 60%;
+  background-size: 60%;
 }
 
 .text-time {
   background: white;
-  margin: 20px;
+  margin: auto;
   border-radius: 55px;
-  padding: 20px;
+  padding: 2px;
+  width: 65%;
+  height: 90%;
   color: var(--secundary);
+  text-align: center;
+  position: relative;
 }
-
 .add-icon {
   color: black;
   background: white;
   opacity: 0.5;
-  top: 36%;
-  left: 40%;
-  padding: 1.2%;
+  left: -15px;
+  bottom: 50%;
+  padding: 4%;
+  font-size: medium;
   margin: 0;
   border-radius: 100%;
   position: absolute;
@@ -89,21 +108,26 @@
 }
 
 .fortnite {
-  margin-top: 30%;
+  margin-top: 10%;
   color: white;
+}
+
+.space-text {
+  margin-bottom: 15%;
 }
 
 /* grid item 3 */
 
 .itemMain3 {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  height: fit-content;
 }
 
 .tag-number {
   color: var(--font-color);
-  font-size: x-large;
+  font-size: large;
   opacity: 0.6;
 }
 
@@ -113,34 +137,33 @@
 
 .section-platform {
   background: var(--primary);
-  padding: 5px;
+  padding: 2%;
   border-radius: 45px;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: fit-content;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 100%;
+  display: flex;
 }
 .section-game {
   background: var(--primary);
-  padding: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   border-radius: 10px;
-}
-
-.space-text {
-  margin-bottom: 40px;
+  height: 300px;
 }
 
 .btn-platform {
+  display: grid;
   background: transparent;
   color: var(--font-color);
   opacity: 0.6;
-  padding: 20px;
+  padding: 5%;
   margin: 0;
   border-radius: 30px;
   height: 100%;
-  width: 120px;
+  width: 100%;
 }
 
 .btn-platform:hover {
@@ -166,7 +189,7 @@
 
 .order-user {
   background: var(--dark-primary-alternative);
-  padding: 5px;
+  padding: 3%;
   border-radius: 100%;
   color: var(--font-color);
   font-weight: bold;
@@ -178,7 +201,7 @@
 }
 
 .avatar-user {
-  padding: 7px;
+  padding: 7%;
   background-color: var(--alternative);
   border-radius: 14px;
   margin-left: 20%;
@@ -189,11 +212,11 @@
 }
 
 .userJoin-btn {
-  padding: 5px;
+  padding: 10%;
   background: var(--light-primary);
   border-radius: 5px;
-  margin-bottom: 10px;
   font-weight: bold;
+  font-size: medium;
 }
 
 .part1 {
@@ -211,17 +234,19 @@
 
 .search-button {
   background: var(--font-color);
-  padding: 25px;
+  padding: 5%;
   border-radius: 10px;
   color: var(--font-color-alternative);
-  font-size: larger;
+  font-size: medium;
 }
 .search-container {
   overflow-y: scroll;
-  height: 160px;
+  height: 95%;
+  transition: 1s;
 }
 .divider-section-search {
-  border: 1px solid var(--light-primary);
+  border: 2.2px solid var(--light-primary);
   opacity: 0.5;
-  margin-bottom: 5%;
+  height: 0.1px;
+  transition: 1s;
 }
